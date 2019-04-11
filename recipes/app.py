@@ -53,5 +53,9 @@ def deserts():
     deserts = execute_sql('SELECT * FROM deserts')
     return render_template('desert.html', deserts=deserts)
 
+@app.route('/all')
+def all():
+    return render_template('all.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
