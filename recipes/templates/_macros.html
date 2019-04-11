@@ -1,0 +1,70 @@
+{% macro show_breakfast(breakfasts) %}
+<div class="card adjust-height">
+  <div class="card-content">
+    <div class="content">
+      <h2>{{breakfasts['brTitle'] }}</h2>
+      <h4>{{ breakfasts['brA'] }}</h4>
+      <p>{{ breakfasts['brIng'] }}</p>
+      <p>{{ breakfasts['brIns'] }}</p><br>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro show_breakfasts(breakfasts) %}
+<div>
+  {% for breakfast in breakfasts %}
+  <div>
+    {{ show_breakfast(breakfast) }}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+
+{% macro show_cookie(cookies) %}
+<div class="card adjust-height">
+  <div class="card-content">
+    <div class="content">
+      <h2>{{cookies['coTitle'] }}</h2>
+      <h4>{{ cookies['coA'] }}</h4>
+      <p>{{ cookies['coIng'] }}</p>
+      <p>{{ cookies['coIns'] }}</p><br>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro show_cookies(cookies) %}
+<div>
+  {% for cookie in cookies %}
+  <div>
+    {{ show_cookie(cookie) }}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+
+{% macro show_desert(deserts) %}
+<div class="card adjust-height">
+  <div class="card-content">
+    <div class="content">
+      <h2>{{ deserts['deTitle'] }}</h2>
+      <h4>{{ deserts['deA'] }}</h4>
+      <p>{{ deserts['deIng'] }}</p>
+      <p>{{ deserts['deIns'] }}</p><br>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro show_deserts(deserts) %}
+<div>
+  {% for desert in deserts %}
+  <div>
+    {{ show_desert(desert) }}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}

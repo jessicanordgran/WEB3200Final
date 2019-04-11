@@ -1,0 +1,23 @@
+{% from '_macros.html' import show_cookie, show_cookies with context %}
+{% from '_macros.html' import show_desert, show_deserts with context %}
+{% from '_macros.html' import show_breakfast, show_breakfasts with context %}
+
+<!doctype html>
+<html>
+<header>
+  <!-- <img src="/static/lisa-hobbs-tea2.jpg" alt="logo"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</header>
+  <head>
+    <title>Yummy Recipes!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  </head>
+  <body>
+    <div class="container top">
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div><br><br><br>
+  </body>
+</html>
