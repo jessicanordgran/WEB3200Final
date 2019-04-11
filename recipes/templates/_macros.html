@@ -23,16 +23,23 @@
 
 
 {% macro show_cookie(cookies) %}
-<div class="card adjust-height">
-  <div class="card-content">
-    <div class="content">
-      <h2>{{cookies['coTitle'] }}</h2>
-      <h4>{{ cookies['coA'] }}</h4>
-      <p>{{ cookies['coIng'] }}</p>
-      <p>{{ cookies['coIns'] }}</p><br>
+<div class="row">
+  <div class="col-6 text-center">
+    <img src="./static/cookies2.jpg" class="card-img-top" alt="..."><br><br><br>
+
+    <div class="card adjust-height">
+      <div class="card-content">
+        <div class="content">
+          <h2>{{cookies['coTitle'] }}</h2>
+          <h4>{{ cookies['coA'] }}</h4>
+          <p>{{ cookies['coIng'] }}</p>
+          <p>{{ cookies['coIns'] }}</p><br>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 {% endmacro %}
 
 {% macro show_cookies(cookies) %}
